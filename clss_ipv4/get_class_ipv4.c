@@ -109,3 +109,17 @@ void class_ipv4(char *ip_address)
 	
 }
 
+char *get_ip()
+{
+	char *ip = malloc(sizeof(char)*255);
+	printf("Entrer l'address IP : ");
+	scanf("%s", ip);
+
+	return ip;
+}
+
+int main()
+{
+	class_ipv4(get_ip());
+	return 0;	
+}
